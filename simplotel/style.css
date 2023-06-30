@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+display: flex;
+width: 99%;
+height: 100vh;
+background-image: url(img1.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+header{
+width: 100vw;
+height: 3%;
+background-color: rgb(255, 255, 255);
+padding: 1rem 0;
+position: relative;
+}
+header nav {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+header nav ul{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+header nav ul li {
+list-style: none;
+padding: 0 3em;
+}
+header nav ul a{
+color: black;
+text-decoration: none;
+font-size:larger;
+font-family:  Georgia, 'Times New Roman', Times, serif;
+cursor: pointer;
+}
+main{
+position: absolute;
+top: 25%;
+}
+.content{
+margin-left: 6%;
+max-width: 45%;
+height: 35%;
+color: rgb(255, 255, 255);
+background-color: rgb(210, 94, 113);
+opacity: 0.8;
+
+}
+.title{
+padding: 4%;
+opacity: 1;
+font-size: x-large;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.icons{
+position: absolute;
+right: 4%;
+}
+.icons i{
+padding: 0.3em;
+cursor:pointer;
+}
+.fa-phone{
+border:2px solid black;
+border-radius: 59%;
+}
+.overview{
+padding: 1% 5% 7% 5%;
+font-size: 20px;
+letter-spacing: 1px;
+font-style: normal;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+max-width: 80%;
+}
+.blank{
+position: absolute;
+bottom: 0%;
+height: 11vh;
+width: 100vw;
+background-image: linear-gradient(90deg, rgb(254, 107, 193), rgb(255, 246, 80));
+}
+@media  screen and (max-width:1257px) {
+
+  header nav ul li{
+      padding: 0 2em;
+  }
+  header nav ul li a{
+      
+      font-size: large;
+  }
+  .icons i{
+      padding: 0.2em;
+      }
+  .overview{
+      font-size: 18px;
+  }
+}
+@media  screen and (max-width:957px) {
+
+  header nav ul li{
+      padding: 0 1.5em;
+  }
+  header nav ul li a{
+      
+      font-size: medium;
+  }
+  .icons{
+      right: 3%;
+  }
+  .icons i{
+      padding: 0.2em;
+      }
+      .title{
+          font-size: large;
+      }
+  .overview{
+      font-size: 16px;
+  }
+}
+@media  screen and (max-width:794px) {
+
+  header nav ul li{
+      padding: 0 1em;
+  }
+  header nav ul li a{
+      
+      font-size:small;
+  }
+  .icons i{
+      font-size: 0.8rem;
+      }
+      .title{
+          font-size: large;
+      }
+  .overview{
+      font-size: 16px;
+  }
+}
+@media  screen and (max-width:589px) {
+
+  header nav ul li{
+      padding: 0 0.4em;
+  }
+  header nav ul li a{
+      
+      font-size:small;
+  }
+  .icons{
+      right: 0;
+  }
+  .icons i{
+      font-size: 0.8rem;
+      }
+      .title{
+          font-size: medium;
+      }
+  .overview{
+      font-size: 14px;
+  }
+}
+@media  screen and (max-width:449px) {
+  header nav ul li{
+      padding: 0 0.3em;
+  }
+  header nav ul li a{
+      
+      font-size:x-small;
+  }
+  .icons{
+      right: 0;
+  }
+  .icons i{
+      font-size: 0.8rem;
+      }
+      .blank{
+        height: 14vh;
+        bottom: -8%;
+      }
+}
